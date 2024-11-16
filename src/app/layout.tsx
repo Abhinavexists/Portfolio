@@ -1,5 +1,17 @@
 import type { Metadata } from "next";
+import {Inter , Poppins} from 'next/font/google';
 import "./globals.css";
+import { twMerge } from 'tailwind-merge';
+
+const inter = Inter({ subsets: ['latin'], variable: "--font--sans"});
+const poppins = Poppins({
+    subsets: ['latin'],
+    variable: "--font--serif", // Custom CSS variable
+    weight: ["400"], // Corrected weight
+});
+
+
+  
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -13,7 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={twMerge(inter.variable,
+        poppins.variable,
+        "bg-gray-900 text-white antialiased font-serif")}
+      >
+        {children}
+      </body>
     </html>
   );
 }

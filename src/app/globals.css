@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@Layer base {
+  .nav-item {
+    @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-medium hover:bg-white/10 hover:text-white transition duration-300;
+  };
+};
