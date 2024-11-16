@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={twMerge(inter.variable,
         poppins.variable,
-        "bg-gray-900 text-white antialiased font-serif")}
+        "bg-indigo-900 text-white antialiased font-serif")}
       >
         {children}
       </body>
