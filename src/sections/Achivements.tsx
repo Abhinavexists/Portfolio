@@ -3,8 +3,12 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import { SectionHeader } from "@/components/SectionHeader";
+import Image from 'next/image';
+import grainImage from "@/assets/images/grain.jpg";
+import { Card } from "@/components/Card";
 
-const testimonials = [
+const Achivements = [
   {
     name: "Alex Turner",
     position: "Marketing Manager @ TechStartups",
@@ -37,6 +41,22 @@ const testimonials = [
   },
 ];
 
-export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
+export const AchivementsSection = () => {
+  return (
+    <div className="py-16">
+      <div className="container">
+        <SectionHeader eyebrow="Achivements" title="What i have accomplished till now?" description="Doing many amazing things have been a part of my college life , still a lot to be done so working on it"/>
+        <div>
+          {Achivements.map((Achivements) => (
+            <Card key={Achivements.name}>
+              <Image src={Achivements.avatar} alt={Achivements.name} />
+              <div>{Achivements.name}</div>
+              <div>{Achivements.position}</div>
+              <p>{Achivements.text}</p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
