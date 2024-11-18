@@ -43,19 +43,19 @@ const Achivements = [
 
 export const AchivementsSection = () => {
   return (
-    <div className="py-16">
+    <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Achivements"
           title="What i have accomplished till now?"
           description="Doing many amazing things have been a part of my college life , still a lot to be done so working on it"
         />
-        <div className="mt-16 flex">
-          <div className="flex flex-none">
+        <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex gap-8 flex-none">
             {Achivements.map((Achivements) => (
-              <Card key={Achivements.name} className="max-w-xs">
+              <Card key={Achivements.name} className="max-w-x md:max-w-md md:p-8">
                 <div className="flex gap-4 items-center">
-                  <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full">
+                  <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <Image src={Achivements.avatar} alt={Achivements.name} className="max-h-full" />
                   </div>
                   <div>
@@ -63,7 +63,7 @@ export const AchivementsSection = () => {
                     <div className="text-sm text-white/40">{Achivements.position}</div>
                   </div>
                 </div>
-                <p className="mt-4 text-sm">{Achivements.text}</p>
+                <p className="mt-4 md:mt-6 text-sm md:text-base">{Achivements.text}</p>
               </Card>
             ))}
           </div>
