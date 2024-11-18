@@ -45,16 +45,28 @@ export const AchivementsSection = () => {
   return (
     <div className="py-16">
       <div className="container">
-        <SectionHeader eyebrow="Achivements" title="What i have accomplished till now?" description="Doing many amazing things have been a part of my college life , still a lot to be done so working on it"/>
-        <div>
-          {Achivements.map((Achivements) => (
-            <Card key={Achivements.name}>
-              <Image src={Achivements.avatar} alt={Achivements.name} />
-              <div>{Achivements.name}</div>
-              <div>{Achivements.position}</div>
-              <p>{Achivements.text}</p>
-            </Card>
-          ))}
+        <SectionHeader
+          eyebrow="Achivements"
+          title="What i have accomplished till now?"
+          description="Doing many amazing things have been a part of my college life , still a lot to be done so working on it"
+        />
+        <div className="mt-16 flex">
+          <div className="flex flex-none">
+            {Achivements.map((Achivements) => (
+              <Card key={Achivements.name} className="max-w-xs">
+                <div className="flex gap-4 items-center">
+                  <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full">
+                    <Image src={Achivements.avatar} alt={Achivements.name} className="max-h-full" />
+                  </div>
+                  <div>
+                    <div className="font-semibold">{Achivements.name}</div>
+                    <div className="text-sm text-white/40">{Achivements.position}</div>
+                  </div>
+                </div>
+                <p className="mt-4 text-sm">{Achivements.text}</p>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </div>
