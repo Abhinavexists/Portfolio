@@ -3,6 +3,7 @@ import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 import { AchivementsSection } from "@/sections/Achivements";
+import { AboutSection } from "@/sections/About";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
        <ProjectsSection />
        <TapeSection />
        <AchivementsSection />
+       <AboutSection />
     </div>
   );
 }

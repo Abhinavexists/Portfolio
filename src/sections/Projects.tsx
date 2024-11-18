@@ -3,7 +3,7 @@ import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import GithubIcon from "@/assets/icons/github.svg";
+import GithubIcon from "@/assets/icons/GitHub.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
@@ -82,7 +82,7 @@ export const ProjectsSection = () => {
                       <span>
                         View Github
                       </span>
-                      <GithubIcon className="size-7" />
+                      <GithubIcon className="size-5" />
                     </button>
                   </a>
                 </div>
