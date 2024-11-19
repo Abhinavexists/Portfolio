@@ -105,23 +105,24 @@ export const AboutSection = () => {
           description="I am a Ml Engineer with a passion for creating accurate and functional model."
         />
         <div className="mt-20 flex flex-col gap-8">
-          <Card className="h-[320px] p-0">
-           <CardHeader title="My Reads"
-            description="I love reading books and exploring new topics."
-            />
-            <div className="w-40 mx-auto mt-8">
-            <img src={bookImage.src} alt="Book Cover" />
-            </div>
-          </Card>
-          <Card className="h-[320px] p-0">
-            <CardHeader 
-              title="Tech Toolbox" 
-              description="Here are some of the technologies I have worked with." 
-              className="px-6 pt-6"
-            />
-            <ToolboxItems items={toolboxItems} className="" />
-            <ToolboxItems items={toolboxItems} className="mt-6" itemsWraperClassName="-translate-x-1/2"/>
-          </Card>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
+            <Card className="h-[320px] p-0 md:col-span-2">
+            <CardHeader title="My Reads"
+              description="I love reading books and exploring new topics."
+              />
+              <div className="w-40 mx-auto mt-2 md:mt-0">
+              <img src={bookImage.src} alt="Book Cover" />
+              </div>
+            </Card>
+            <Card className="h-[320px] md:col-span-3">
+              <CardHeader 
+                title="Tech Toolbox" 
+                description="Here are some of the technologies I have worked with." 
+              />
+              <ToolboxItems items={toolboxItems} />
+              <ToolboxItems items={toolboxItems} className="mt-6" itemsWraperClassName="-translate-x-1/2"/>
+            </Card>
+          </div>
           <Card className="h-[320px] p-0 flex flex-col">
             <CardHeader 
             className="px-6 py-6"
