@@ -13,6 +13,8 @@ import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import Image from "next/image";
 import smileMemoji from "@/assets/images/memoji-smile.png";
+import { CardHeader } from "@/components/CardHeader";
+import { ToolboxItems } from "@/components/ToolboxItems";
 
 const toolboxItems = [
   {
@@ -102,31 +104,26 @@ export const AboutSection = () => {
           eyebrow="Who am I?"
           description="I am a Ml Engineer with a passion for creating accurate and functional model."
         />
-        <div>
-          <Card>
-            <div>
-              <StarIcon />
-              <h3>My Reads</h3>
-              <p>Exploring Books that are a feet apart.</p>
-            </div>
-              <img src={bookImage.src} alt="Book Cover" />
-          </Card>
-          <Card>
-            <div>
-              {toolboxItems.map((item) => (
-                <div key={item.title}>
-                  <TechIcon component={item.iconType} />
-                  <span>{item.title}</span>
-                </div>
-              ))}
+        <div className="mt-20">
+          <Card className="h-[320px]">
+           <CardHeader title="My Reads"
+            description="I love reading books and exploring new topics."
+            />
+            <div className="w-40 mx-auto mt-8">
+            <img src={bookImage.src} alt="Book Cover" />
             </div>
           </Card>
+          <Card className="h-[320px] p-5">
+            <CardHeader 
+              title="Tech Toolbox" 
+              description="Here are some of the technologies I have worked with." 
+              className = "px-6 pt-6"
+            />
+            <ToolboxItems items={toolboxItems} className="mt-6" />
+            <ToolboxItems items={toolboxItems} className="mt-6"/>
+          </Card>
           <Card>
-            <div>
-              <StarIcon />
-              <h3>Beyond The code</h3>
-              <p>Explore my intrests and hobbies.</p>
-            </div>
+            <CardHeader title="Beyond The code"  description="Explore my intrests and hobbies." />
             <div>
               {hobbies.map((hobby) => (
                 <div key={hobby.title}>
