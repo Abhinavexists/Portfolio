@@ -132,7 +132,7 @@ export const AboutSection = () => {
               />
               <div className="relative flex-1">
                 {hobbies.map((hobby) => (
-                  <div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-pink-600 to-sky-400 rounded-full py-1.5 absolute " style={{
+                  <div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-indigo-400 to-sky-400 rounded-full py-1.5 absolute " style={{
                     left: hobby.left,
                     top: hobby.top,
                   }}>
@@ -144,7 +144,7 @@ export const AboutSection = () => {
             </Card>
             <Card className="h-[320px] p-0 relative col-span-3 md:col-span-2 lg:col-span-1">
               <Image src={mapImage} alt="Map" className="h-full w-full object-cover object-left-top " />    
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-pink-600 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-indigo-400 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 <Image src={smileMemoji} alt="Smile Memoji"  className="size-20"/>
               </div>
             </Card>
