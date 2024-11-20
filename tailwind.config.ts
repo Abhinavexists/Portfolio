@@ -15,7 +15,7 @@ const config: Config = {
   		lg: '1200px'
   	},
   	container: {
-  		center: 'true',
+		center: true,
   		padding: {
   			DEFAULT: '1rem',
   			md: '2rem'
@@ -72,8 +72,19 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
-  	}
+  		},
+		animation: {
+			'ping-large': "ping large ls ease-in-out infinite"
+		},
+		keyframes: {
+			'ping-large': {
+				'75%, 100%': {
+					transform: 'scale(3)',
+					opacity: '0',
+				}
+			}
+		}
+	},
   },
   plugins: [require("tailwindcss-animate")],
 };
