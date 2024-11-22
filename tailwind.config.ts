@@ -74,7 +74,10 @@ const config: Config = {
   			}
   		},
 		animation: {
-			'ping-large': "ping-large 1s ease-in-out infinite"
+			'ping-large': "ping-large 1s ease-in-out infinite",
+			"move-left": 'move-left 1s linear infinite',
+        	"move-right": 'move-right 1s linear infinite',
+			"zoom-out": 'zoom-out 0.5s ease-in-out', // Add this line
 		},
 		keyframes: {
 			'ping-large': {
@@ -82,10 +85,34 @@ const config: Config = {
 					transform: 'scale(3)',
 					opacity: '0',
 				}
-			}
-		}
+			},
+			"move-left": {
+				'0%': {
+				  transform: "translateX(0%)",
+				},
+				'100%': {
+				  transform: "translateX(-50%)",
+				},
+			  },
+			  "move-right": {
+				'0%': {
+				  transform: "translateX(-50%)",
+				},
+				'100%': {
+				  transform: "translateX(0%)",
+				}
+			 },
+			 "zoom-out": { // Add this keyframe
+				'0%': {
+				  transform: 'scale(1)',
+				},
+				'100%': {
+				  transform: 'scale(0.95)',
+				},
+			  },
+		},
 	},
-  },
+	},
   plugins: [require("tailwindcss-animate")],
 };
 export default config;
