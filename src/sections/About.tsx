@@ -1,15 +1,12 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import StarIcon from "@/assets/icons/Star.svg";
 import bookImage from "@/assets/images/book-cover.png";
-import { title } from "process";
 import JavaScriptIcon from "@/assets/icons/square-js.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
 import CSSIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import GithubIcon from "@/assets/icons/Github.svg";
 import PythonIcon from "@/assets/icons/Python.svg";
-import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import Image from "next/image";
 import smileMemoji from "@/assets/images/memoji-smile.png";
@@ -119,8 +116,8 @@ export const AboutSection = () => {
                 title="Tech Toolbox" 
                 description="Here are some of the technologies I have worked with." 
               />
-              <ToolboxItems items={toolboxItems} />
-              <ToolboxItems items={toolboxItems} className="mt-6" itemsWraperClassName="-translate-x-1/2"/>
+              <ToolboxItems items={toolboxItems}itemsWraperClassName="animate-move-left [animation-duration:30s]" />
+              <ToolboxItems items={toolboxItems} className="mt-6" itemsWraperClassName="animate-move-right [animation-duration:20s]"/>
             </Card>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
