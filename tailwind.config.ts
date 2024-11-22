@@ -36,7 +36,6 @@ const config: Config = {
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
   			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
@@ -77,7 +76,7 @@ const config: Config = {
 			'ping-large': "ping-large 1s ease-in-out infinite",
 			"move-left": 'move-left 1s linear infinite',
         	"move-right": 'move-right 1s linear infinite',
-			"zoom-out": 'zoom-out 0.5s ease-in-out', // Add this line
+			"zoom-out": 'zoom-out 0.5s ease-in-out',
 		},
 		keyframes: {
 			'ping-large': {
@@ -102,7 +101,7 @@ const config: Config = {
 				  transform: "translateX(0%)",
 				}
 			 },
-			 "zoom-out": { // Add this keyframe
+			 "zoom-out": {
 				'0%': {
 				  transform: 'scale(1)',
 				},
