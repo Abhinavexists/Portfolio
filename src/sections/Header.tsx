@@ -1,20 +1,25 @@
+'use client'
+
+import { smoothScroll } from "@/components/smoothScroll";
+
 export const Header = () => {
   return (
-    <div className="flex justify-center items-center fixed top-3 w-full z-10">
+    <header className="flex justify-center items-center fixed top-3 w-full z-10">
       <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
-        <a href="#" className="nav-item">
+        <a href="#home" className="nav-item" onClick={smoothScroll}>
           Home
         </a>
-        <a href="#" className="nav-item">
+        <a href="#projects" className="nav-item" onClick={smoothScroll}>
           Projects
         </a>
-        <a href="#" className="nav-item">
+        <a href="#about" className="nav-item" onClick={smoothScroll}>
           About
         </a>
-        <a href="#" className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900">
+        <a href="#contact" className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900" onClick={smoothScroll}>
           Contact
         </a>
       </nav>
-    </div>
+    </header>
   );
 };
+
