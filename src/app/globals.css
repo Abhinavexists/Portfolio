@@ -14,12 +14,13 @@ html {
  
  @layer base {
    .nav-item {
-     @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-medium hover:bg-white/10 hover:text-white transition duration-300;
-   }
+      @apply px-4 py-2 rounded-full text-sm font-medium text-white/70 flex items-center justify-center transition duration-300 hover:bg-white/10 hover:text-green-500;
+    }
+    
 
    .nav-item:hover {
-      @apply bg-white/10;
-    }    
+     @apply bg-white/10;
+   }
  
    .hero-ring {
      @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-indigo-400/5 shadow-[0_0_80px_inset] shadow-indigo-400/5;

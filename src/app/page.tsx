@@ -9,27 +9,23 @@ import { Footer } from "@/sections/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Header />
-      <div id="home">
+      <section id="home">
         <HeroSection />
-      </div>
-      <div id="projects">
+      </section>
+      <section id="projects">
         <ProjectsSection />
-      </div>
-      <div id="tape">
-        <TapeSection />
-      </div>
-      <div id="achievements">
-        <AchivementsSection />
-      </div>
-      <div id="about">
+      <TapeSection />
+      <AchivementsSection />
+      </section>
+      <section id="about">
         <AboutSection />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact">
         <ContactSection />
-      </div>
+      </section>
       <Footer />
-    </div>
+    </main>
   );
 }
