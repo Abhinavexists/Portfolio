@@ -35,9 +35,7 @@ export default function RootLayout({
       >
         {/* <AnimatedBackground /> */}
         <div className="relative z-10">
-          <Header />
           <main>{children}</main>
-          <Footer />
         </div>
       </body>
     </html>
