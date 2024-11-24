@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import {Inter , Poppins} from 'next/font/google';
+import { Header } from '@/sections/Header'; // Adjust the path as necessary
+// import { AnimatedBackground } from '@/components/AnimatedBackground'; // Adjust the path as necessary
+import { Footer } from '@/sections/Footer'; // Adjust the path as necessary
 import "./globals.css";
 import { twMerge } from 'tailwind-merge';
 
@@ -18,16 +21,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={twMerge(inter.variable,
-        poppins.variable,
-        "bg-indigo-950 text-white antialiased font-serif")}
+      <body
+        className={twMerge(
+          inter.variable,
+          poppins.variable,
+          "bg-indigo-950 text-white antialiased font-serif"
+        )}
       >
-        {children}
+        {/* <AnimatedBackground /> */}
+        <div className="relative z-10">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -15,7 +15,7 @@ export const Header = () => {
         <a href="#about" className="nav-item" onClick={smoothScroll}>
           About
         </a>
-        <a href="#contact" className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900" onClick={smoothScroll}>
+        <a href="#contact" className="nav-item" onClick={smoothScroll}>
           Contact
         </a>
       </nav>
