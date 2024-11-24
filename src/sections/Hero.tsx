@@ -61,7 +61,7 @@ export const HeroSection = () => {
     </div>
     <div className="max-w-lg mx-auto">
     <h1 className="font-serif text-3xl md:text-5xl text center mt-8 tracking-wide font-semibold text-center ">
-      Learning Machine Learning
+      Abhinav Kumar Singh
     </h1>
       <p className="mt-4 text-center text-white/60 md:text-lg">
         Aspiring ML Engineer skilled in Python for data manipulation and visualization. 
