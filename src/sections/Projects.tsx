@@ -4,7 +4,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import GithubIcon from "@/assets/icons/GitHub.svg";
-import GlobeIcon from "@/assets/icons/arrow-up-right.svg";
+import ArrowUpIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -98,7 +98,7 @@ export const ProjectsSection = () => {
                     <a href={project.liveLink} className="inline-block w-full sm:w-auto">
                       <button className="bg-indigo-500 text-white h-12 w-full px-4 sm:px-6 rounded-xl font-medium inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         <span>Website</span>
-                        <GlobeIcon className="size-5" />
+                        <ArrowUpIcon className="size-5" />
                       </button>
                     </a>
                   </div>

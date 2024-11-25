@@ -1,5 +1,5 @@
 import { Header } from "@/sections/Header";
-import { HeroSection } from "@/sections/Hero";
+import { ProfileSection } from "@/sections/Profile";
 import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 import { AchivementsSection } from "@/sections/Achivements";
@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Header />
       <section id="home">
-        <HeroSection />
+        <ProfileSection />
       </section>
       <section id="projects">
         <ProjectsSection />

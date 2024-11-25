@@ -6,7 +6,7 @@ import { Orbit } from "@/components/Orbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import YourFaceImage from "@/assets/images/Inspired.jpeg";
 
-export const HeroSection = () => {
+export const ProfileSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_40%,transparent)]">
