@@ -4,6 +4,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import GithubIcon from "@/assets/icons/GitHub.svg";
+import GlobeIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -18,6 +19,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "link1",
+    liveLink: "https://live-site-1.com",
     image: darkSaasLandingPage,
   },
   {
@@ -30,6 +32,7 @@ const portfolioProjects = [
       { title: "Increased brand awareness by 15%" },
     ],
     link: "link2",
+    liveLink: "https://live-site-2.com",
     image: lightSaasLandingPage,
   },
   {
@@ -42,6 +45,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "link3",
+    liveLink: "https://live-site-3.com",
     image: aiStartupLandingPage,
   },
 ];
@@ -84,12 +88,20 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link} className="inline-block mt-8">
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                      <span>View Github</span>
-                      <GithubIcon className="size-5" />
-                    </button>
-                  </a>
+                  <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
+                    <a href={project.link} className="inline-block w-full sm:w-auto">
+                      <button className="bg-white text-gray-950 h-12 w-full px-4 sm:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        <span>Github</span>
+                        <GithubIcon className="size-5" />
+                      </button>
+                    </a>
+                    <a href={project.liveLink} className="inline-block w-full sm:w-auto">
+                      <button className="bg-indigo-500 text-white h-12 w-full px-4 sm:px-6 rounded-xl font-medium inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <span>Website</span>
+                        <GlobeIcon className="size-5" />
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div className="relative overflow rounded-lg mt-8 lg:mt-0 lg:pl-16">
                   <Image
@@ -106,3 +118,4 @@ export const ProjectsSection = () => {
     </section>
   );
 };
+
