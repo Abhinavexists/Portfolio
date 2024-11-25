@@ -8,7 +8,7 @@ import YourFaceImage from "@/assets/images/Inspired.jpeg";
 
 export const ProfileSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div className="py-32 md:py-48 lg:py-50 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_40%,transparent)]">
         <div className="absolute inset-0 -z-30 opacity-5" 
           style={{ backgroundImage: `url(${GrainImage.src})` }}>
@@ -18,22 +18,22 @@ export const ProfileSection = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
         <Orbit size={800} rotation={-72} shouldOrbit orbitDuration="42s" shouldSpin spinDuration="15s">
-          <StarIcon className="size-20 text-pink-300"/>
+          <StarIcon className="size-20 text-sky-400"/>
         </Orbit>
         <Orbit size={550} rotation={20} shouldOrbit orbitDuration="37s" shouldSpin spinDuration="20s">
-          <StarIcon className="size-12 text-pink-300"/>
+          <StarIcon className="size-12 text-sky-400"/>
         </Orbit>
         <Orbit size={590} rotation={100} shouldOrbit orbitDuration="33s" shouldSpin spinDuration="18s">
-          <StarIcon className="size-8 text-pink-300" />
+          <StarIcon className="size-8 text-sky-400" />
         </Orbit>
         <Orbit size={420} rotation={-15} shouldOrbit orbitDuration="28s" shouldSpin spinDuration="10s">
-          <SparkleIcon className="size-8 text-pink-300/20"/>
+          <SparkleIcon className="size-8 text-sky-400/20"/>
         </Orbit>
         <Orbit size={440} rotation={178} shouldOrbit orbitDuration="31s" shouldSpin spinDuration="12s">
-          <SparkleIcon className="size-10 text-pink-300/20"/>
+          <SparkleIcon className="size-10 text-sky-400/20"/>
         </Orbit>
         <Orbit size={710} rotation={145} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="25s">
-          <SparkleIcon className="size-14 text-pink-300/20"/>
+          <SparkleIcon className="size-14 text-sky-400/20"/>
         </Orbit>
         <Orbit size={720} rotation={90} shouldOrbit orbitDuration="50s" shouldSpin spinDuration="30s">
           <div className="size-3 rounded-full bg-pink-300/20"/>
@@ -67,9 +67,9 @@ export const ProfileSection = () => {
             Abhinav Kumar Singh
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Aspiring ML Engineer skilled in Python for data manipulation and visualization. 
-            Actively exploring Deep Learning and Natural Language Processing. 
-            Committed to advancing AI through continuous learning. 
+            Aspiring  Machine Learning Engineer proficient in Python for data manipulation and visualization. 
+            Passionate about advancing AI, currently delving into Deep Learning and Natural Language Processing
+            through continuous exploration and learning. 
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
