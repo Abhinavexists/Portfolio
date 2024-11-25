@@ -11,11 +11,6 @@ const poppins = Poppins({
   weight: ["400"],
 });
 
-export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -32,7 +27,7 @@ export default function RootLayout({
       >
         {/* Particles Background */}
         <Particles
-          className="fixed inset-0 pointer-events-none"
+          className="fixed inset-0 pointer-events-none z-0"
           quantity={100}
           color="#ffffff"
           size={0.5}

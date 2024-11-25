@@ -4,7 +4,7 @@ import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 import { AchivementsSection } from "@/sections/Achivements";
 import { AboutSection } from "@/sections/About";
-import { ContactSection } from "@/sections/Contact";
+import { ContactSection } from "@/sections/Game";
 import { Footer } from "@/sections/Footer";
 
 export default function Home() {
