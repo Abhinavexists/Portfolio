@@ -4,7 +4,7 @@ import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 import { AchivementsSection } from "@/sections/Achivements";
 import { AboutSection } from "@/sections/About";
-import { ContactSection } from "@/sections/Game";
+import { GameSection } from "@/sections/Game";
 import { Footer } from "@/sections/Footer";
 
 export default function Home() {
@@ -22,10 +22,10 @@ export default function Home() {
       <section id="about">
         <AboutSection />
       </section>
+        <GameSection />
       <section id="contact">
-        <ContactSection />
+        <Footer />
       </section>
-      <Footer />
     </main>
   );
 }
