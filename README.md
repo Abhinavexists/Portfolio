@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portfolio Website
 
-First, run the development server:
+This is a responsive and interactive portfolio website built with TypeScript and React. The project showcases skills, achievements, and projects while incorporating animations and user-friendly navigation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📂 Project Structure
+
+The folder structure is as follows:
+
+```
+public/
+├── favicon.ico       # Website favicon
+
+src/
+├── app/              # Application files
+│   ├── globals.css   # Global styling
+│   ├── layout.tsx    # Main layout configuration
+│   ├── page.tsx      # Entry page of the application
+├── assets/           # Static assets (images, icons, etc.)
+├── components/       # Reusable UI components
+│   ├── Card.tsx
+│   ├── CardHeader.tsx
+│   ├── Orbit.tsx
+│   ├── Particle.tsx
+│   ├── SectionHeader.tsx
+│   ├── smoothScroll.tsx
+│   ├── TechIcon.tsx
+│   ├── ToolboxItems.tsx
+├── lib/
+│   ├── utils.ts       # Utility functions
+├── sections/         # Website sections
+│   ├── About.tsx
+│   ├── Achievements.tsx
+│   ├── Footer.tsx
+│   ├── Game.tsx
+│   ├── Header.tsx
+│   ├── Profile.tsx
+│   ├── Projects.tsx
+│   ├── Top.tsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Responsive Design**: Adapts seamlessly across various devices.
+- **Dynamic Animations**: Smooth scrolling, particle effects, and orbit animations.
+- **Modular Components**: Clean and reusable components for better maintainability.
+- **TypeScript Integration**: Ensures type safety and better code quality.
+- **Interactive Sections**: Includes `About`, `Projects`, `Achievements`, and more.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: React with Next.js
+- **Language**: TypeScript
+- **Styling**: CSS modules
+- **Libraries**: 
+  - Particle.js for background effects
+  - Smooth scrolling for better navigation
+  - Icons and assets for visual enhancement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📜 Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**:
+   ```bash
+   git clone <repository_url>
+   cd <repository_directory>
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+5. **Preview the build**:
+   ```bash
+   npm run start
+   ```
+
+---
+
+## 📸 Preview
+
+(Include screenshots or GIFs of the website here for a better visual representation.)
+
+---
+
+## ✨ Contributions
+
+Feel free to contribute to this project by submitting issues or pull requests. Follow the steps below:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push to your branch.
+5. Open a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 📝 Author
+
+- **[Your Name]**  
+  - **GitHub**: [Your GitHub Profile](https://github.com/your-username)  
+  - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
