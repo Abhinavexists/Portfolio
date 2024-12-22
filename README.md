@@ -1,18 +1,13 @@
-
 # Portfolio Website
 
-This is a responsive and interactive portfolio website built with TypeScript and React. The project showcases skills, achievements, and projects while incorporating animations and user-friendly navigation.
+A responsive and interactive portfolio website built with TypeScript and React. The project showcases skills, achievements, and projects while incorporating animations and user-friendly navigation.
 
----
+![Portfolio Preview](https://via.placeholder.com/800x400)
 
 ## 📂 Project Structure
-
-The folder structure is as follows:
-
 ```
 public/
 ├── favicon.ico       # Website favicon
-
 src/
 ├── app/              # Application files
 │   ├── globals.css   # Global styling
@@ -29,7 +24,7 @@ src/
 │   ├── TechIcon.tsx
 │   ├── ToolboxItems.tsx
 ├── lib/
-│   ├── utils.ts       # Utility functions
+│   ├── utils.ts      # Utility functions
 ├── sections/         # Website sections
 │   ├── About.tsx
 │   ├── Achievements.tsx
@@ -41,86 +36,70 @@ src/
 │   ├── Top.tsx
 ```
 
----
-
 ## 🚀 Features
+- **Responsive Design**: Adapts seamlessly across various devices
+- **Dynamic Animations**: Smooth scrolling, particle effects, and orbit animations
+- **Modular Components**: Clean and reusable components for better maintainability
+- **TypeScript Integration**: Ensures type safety and better code quality
+- **Interactive Sections**: Includes About, Projects, Achievements, and more
 
-- **Responsive Design**: Adapts seamlessly across various devices.
-- **Dynamic Animations**: Smooth scrolling, particle effects, and orbit animations.
-- **Modular Components**: Clean and reusable components for better maintainability.
-- **TypeScript Integration**: Ensures type safety and better code quality.
-- **Interactive Sections**: Includes `About`, `Projects`, `Achievements`, and more.
-
----
-
-## 🛠️ Tech Stack
-
+## 🛠️ Technology Stack
+### Core
 - **Framework**: React with Next.js
 - **Language**: TypeScript
 - **Styling**: CSS modules
-- **Libraries**: 
-  - Particle.js for background effects
-  - Smooth scrolling for better navigation
-  - Icons and assets for visual enhancement
 
----
+### Libraries
+- Particle.js for background effects
+- Smooth scrolling for navigation
+- Icons and assets for visual enhancement
 
-## 📜 Installation
+## 💻 Development Setup
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd <repository_directory>
-   ```
+### Prerequisites
+- Node.js
+- npm or yarn
+- Git
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Installation
+1. **Clone the repository**
+```bash
+git clone <repository_url>
+cd <repository_directory>
+```
 
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
+2. **Install dependencies**
+```bash
+npm install
+```
 
-4. **Build for production**:
-   ```bash
-   npm run build
-   ```
+3. **Start development server**
+```bash
+npm run dev
+```
 
-5. **Preview the build**:
-   ```bash
-   npm run start
-   ```
+### Build & Preview
+1. **Build for production**
+```bash
+npm run build
+```
 
----
+2. **Preview the build**
+```bash
+npm run start
+```
 
-## 📸 Preview
-
-(Include screenshots or GIFs of the website here for a better visual representation.)
-
----
-
-## ✨ Contributions
-
-Feel free to contribute to this project by submitting issues or pull requests. Follow the steps below:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Push to your branch.
-5. Open a pull request.
-
----
+## 🤝 Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a pull request
 
 ## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 📝 Author
-
-- **[Your Name]**  
-  - **GitHub**: [Your GitHub Profile](https://github.com/your-username)  
+## 👤 Author
+- **[Your Name]**
+  - **GitHub**: [Your GitHub Profile](https://github.com/your-username)
   - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
