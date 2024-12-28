@@ -9,21 +9,43 @@ import CSSIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import GithubIcon from "@/assets/icons/Github.svg";
 import PythonIcon from "@/assets/icons/Python.svg";
-import mapImage from "@/assets/images/map.png";
+import GitIcon from "@/assets/icons/git.svg";
+import JavaIcon from "@/assets/icons/java.svg";
+import FlaskIcon from "@/assets/icons/flask.svg";
+import SqlIcon from "@/assets/icons/sqlite3.svg";
+import MongoDBIcon from "@/assets/icons/mongodb.svg";
+import NumpyIcon from "@/assets/icons/numpy.svg";
+import mapImage from "@/assets/images/Map.png";
+import MatlpotlibIcon from "@/assets/icons/matplotlib.svg";
+import SeabornIcon from "@/assets/icons/seaborn.svg";
+import Pandasicon from "@/assets/icons/pandas.svg";
+import ScikitIcon from "@/assets/icons/scikit-learn.svg";
+import TenserflowIcon from "@/assets/icons/tensorflow.svg";
+import StreamlitIcon from "@/assets/icons/streamlit.svg";
+import LangchainIcon from "@/assets/icons/Langchain.svg";
+import FirebaseIcon from "@/assets/icons/firebase.svg";
 import Image from "next/image";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
 
-const toolboxItems = [
+const toolboxItems1 = [
   {
     title: "Python",
     iconType: PythonIcon ,
   },
   {
+    title: "Java",
+    iconType: JavaIcon ,
+  },
+  {
     title: "JavaScript",
     iconType: JavaScriptIcon ,
+  },
+  {
+    title: "Flask",
+    iconType: FlaskIcon ,
   },
   {
     title: "Html5",
@@ -40,6 +62,57 @@ const toolboxItems = [
   {
     title: "Github",
     iconType: GithubIcon ,
+  },
+  {
+    title: "Git",
+    iconType: GitIcon ,
+  },
+  {
+    title: "MongoDB",
+    iconType: MongoDBIcon ,
+  },
+]
+
+const toolboxItems2 = [
+  {
+    title: "Numpy",
+    iconType: NumpyIcon ,
+  },
+  {
+    title: "Matplotlib",
+    iconType: MatlpotlibIcon ,
+  },
+  {
+    title: "Pandas",
+    iconType: Pandasicon ,
+  },
+  {
+    title: "Seaborn",
+    iconType: SeabornIcon ,
+  },
+  {
+    title: "Scikit-learn",
+    iconType: ScikitIcon ,
+  },
+  {
+    title: "Tensorflow",
+    iconType: TenserflowIcon ,
+  },
+  {
+    title: "Streamlit",
+    iconType: StreamlitIcon ,
+  },
+  {
+    title: "Sqlite3",
+    iconType: SqlIcon ,
+  },
+  {
+    title: "Langchain",
+    iconType: LangchainIcon ,
+  },
+  {
+    title: "Firebase",
+    iconType: FirebaseIcon ,
   },
 ]
 
@@ -120,8 +193,8 @@ export const AboutSection = () => {
                 title="Tech Toolbox" 
                 description="Here are some of the technologies I have worked with." 
               />
-              <ToolboxItems items={toolboxItems}itemsWraperClassName="animate-move-left [animation-duration:30s]" />
-              <ToolboxItems items={toolboxItems} className="mt-6" itemsWraperClassName="animate-move-right [animation-duration:20s]"/>
+              <ToolboxItems items={toolboxItems1}itemsWraperClassName="animate-move-left [animation-duration:30s]" />
+              <ToolboxItems items={toolboxItems2} className="mt-6" itemsWraperClassName="animate-move-right [animation-duration:20s]"/>
             </Card>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">

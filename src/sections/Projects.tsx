@@ -3,7 +3,7 @@ import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import GithubIcon from "@/assets/icons/GitHub.svg";
+import GithubIcon from "@/assets/icons/Github.svg";
 import ArrowUpIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";

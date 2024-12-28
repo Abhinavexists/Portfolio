@@ -22,7 +22,7 @@ export default function RootLayout({
         className={twMerge(
           inter.variable,
           poppins.variable,
-          "bg-indigo-950 text-white antialiased font-serif"
+          "bg-gray-950 text-white antialiased font-serif"
         )}
       >
         {/* Particles Background */}
