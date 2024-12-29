@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import bookImage from "@/assets/images/book-cover.png";
 import mapImage from "@/assets/images/Map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
@@ -33,13 +32,34 @@ export const AboutSection = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1">
+            <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1 overflow-hidden">
               <CardHeader
-                title="My Reads"
-                description="I love reading books and exploring new topics."
+                title="Education"
+                description="My current education and certifications."
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <img src={bookImage.src} alt="Book Cover" />
+              <div className="h-full overflow-y-auto px-12 hide-scrollbar">
+                 <ul className="list-disc space-y-3 text-sm text-gray-300">
+                  <li>
+                    <strong>Bachelor of Technology in Information Technology</strong> - <a href="https://bvcoend.ac.in/" target="blank">Bharati Vidyapeeth's College of Engineering, New Delhi</a>
+                    <br />
+                    <span className="text-gray-500">2022 - 2026</span>
+                  </li>
+                  <li>
+                    <strong>High School - AISSCE</strong> - <a href="https://universalpublicschool.in/" target="blank">Universal Public School, New Delhi</a>
+                    <br />
+                    <span className="text-gray-500">Completed in 2022</span>
+                  </li>
+                  <li>
+                    <strong>Beta MLSA</strong> - <a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/1776c629-be08-44e0-8f0e-81fb84ac2604" target="blank">Microsoft Learn Student Ambassadors</a>
+                    <br />
+                    <span className="text-gray-500">Started in 2023</span>
+                  </li>
+                  <li>
+                    <strong></strong>
+                    <br />
+                    <span className="text-gray-500"></span>
+                  </li>
+                </ul>
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">

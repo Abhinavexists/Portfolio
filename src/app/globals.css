@@ -15,6 +15,12 @@
  html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
 }
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
  @layer base {
    .nav-item {
       @apply px-4 py-2 rounded-full text-sm font-medium text-white/70 flex items-center justify-center transition duration-300 hover:bg-white/10 hover:text-gray-950;
