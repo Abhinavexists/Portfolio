@@ -49,11 +49,6 @@ export const AboutSection = () => {
                     <br />
                     <span className="text-gray-500">Completed in 2022</span>
                   </li>
-                  <li>
-                    <strong>Beta MLSA</strong> - <a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/1776c629-be08-44e0-8f0e-81fb84ac2604" target="_blank" rel="noopener noreferrer">Microsoft Learn Student Ambassadors</a>
-                    <br />
-                    <span className="text-gray-500">Started in 2023</span>
-                  </li>
                 </ul>
               </div>
             </Card>

@@ -1,45 +1,46 @@
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import BetaMLSA from "@/assets/images/LevelBeta.png";
+import DesignHub from "@/assets/images/designhub.png";
+import SIH from "@/assets/images/SIH.png";
+import Hacktober from "@/assets/images/hacktober.png";
+import Bertelsmann from "@/assets/images/Bertelsmann.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import { Card } from "@/components/Card";
 import { Fragment } from "react";
 
-const Achivements = [
+export const Achievements = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
+    title: "Designathon:-DesignHub,IIIT-D",
+    description: "Became 2nd Runner-up in Designathon. Designed a Mobile App for farmers to help them in crop management named 'Fasal'.",
+    year: "2024",
+    icon: DesignHub,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
+    title: "Beta Mearn Student Ambassador",
+    description: "Became a Beta Member of MLSA(Microsoft Learn Student Ambassador) Program. Organized various events and workshops on AI, ML, and Cloud.",
+    year: "2023",
+    icon: BetaMLSA,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
+    title: "Smart India Hackathon Finalist",
+    description: "Became a finalist in Smart India Hackathon 2024, for developing a solution for the problem statement given by the Ministry of Ayush.",
+    year: "2024",
+    icon: SIH,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
+    title: "Hacktoberfest",
+    description: "Participated in Hacktoberfest 2024 and contributed to open-source projects succesfully completing over 6 PRs.",
+    year: "2024",
+    icon: Hacktober,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
+    title: "Next Generation Tech Booster Scholar",
+    description: "Recipient of the Next Generation Tech Booster Scholarship by Bertelsmann and Udacity, specializing in advanced skills through project-based learning.",
+    year: "2024",
+    icon: Bertelsmann,
   },
 ];
+
 
 export const AchivementsSection = () => {
   return (
@@ -61,30 +62,30 @@ export const AchivementsSection = () => {
           <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:70s] hover:[animation-play-state:paused]">
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
-                {Achivements.map((achievement) => (
+                {Achievements.map((achievement) => (
                   <Card
-                    key={achievement.name}
+                    key={achievement.title}
                     className="max-w-[23rem] md:max-w-md p-6 md:p-8 lg:max-w-lg hover:-rotate-3 transition duration-300"
                   >
                     <div className="flex gap-4 items-center">
                       <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0 lg:size-20">
                         <Image
-                          src={achievement.avatar}
-                          alt={achievement.name}
+                          src={achievement.icon}
+                          alt={achievement.title}
                           className="max-h-full"
                         />
                       </div>
                       <div>
                         <div className="font-semibold lg:text-2xl">
-                          {achievement.name}
+                          {achievement.title}
                         </div>
                         <div className="text-sm text-white/40 lg:text-lg">
-                          {achievement.position}
+                          {achievement.year}
                         </div>
                       </div>
                     </div>
                     <p className="mt-4 md:mt-6 text-sm text-justify md:text-base lg:text-lg">
-                      {achievement.text}
+                      {achievement.description}
                     </p>
                   </Card>
                 ))}

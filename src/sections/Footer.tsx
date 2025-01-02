@@ -14,7 +14,7 @@ const footerLinks = [
     href: "https://github.com/Abhinavexists",
     icon: <FaGithub />,
   },
-  {
+  { 
     title: "Mail",
     href: "mailto:abhinavkumarsingh2023@gmail.com",
     icon: <SiGmail />,
