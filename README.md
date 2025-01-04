@@ -1,19 +1,22 @@
 # Portfolio Website
 
-A responsive and interactive portfolio website built with TypeScript and React. The project showcases skills, achievements, and projects while incorporating animations and user-friendly navigation.
+A responsive and interactive portfolio website built with TypeScript and React.
 
 ![Portfolio Preview](https://via.placeholder.com/800x400)
 
 ## 📂 Project Structure
 ```
 public/
-├── favicon.ico       # Website favicon
+│
 src/
 ├── app/              # Application files
+│   ├── favicon,io 
 │   ├── globals.css   # Global styling
 │   ├── layout.tsx    # Main layout configuration
 │   ├── page.tsx      # Entry page of the application
-├── assets/           # Static assets (images, icons, etc.)
+│
+├── assets/
+│
 ├── components/       # Reusable UI components
 │   ├── Card.tsx
 │   ├── CardHeader.tsx
@@ -22,9 +25,12 @@ src/
 │   ├── SectionHeader.tsx
 │   ├── smoothScroll.tsx
 │   ├── TechIcon.tsx
+│   ├── TechToolBox.tsx
 │   ├── ToolboxItems.tsx
+│
 ├── lib/
 │   ├── utils.ts      # Utility functions
+│
 ├── sections/         # Website sections
 │   ├── About.tsx
 │   ├── Achievements.tsx
@@ -33,7 +39,7 @@ src/
 │   ├── Header.tsx
 │   ├── Profile.tsx
 │   ├── Projects.tsx
-│   ├── Top.tsx
+│   ├── Tape.tsx
 ```
 
 ## 🚀 Features
@@ -64,8 +70,8 @@ src/
 ### Installation
 1. **Clone the repository**
 ```bash
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/Abhinavexists/Portfolio.git
+cd Portfolio
 ```
 
 2. **Install dependencies**
@@ -98,8 +104,3 @@ npm run start
 
 ## 📄 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-- **[Your Name]**
-  - **GitHub**: [Your GitHub Profile](https://github.com/your-username)
-  - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
