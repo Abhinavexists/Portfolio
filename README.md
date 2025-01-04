@@ -1,8 +1,8 @@
-# Portfolio Website
+# Portfolio
 
 A responsive and interactive portfolio website built with TypeScript and React.
 
-![Portfolio Preview](https://via.placeholder.com/800x400)
+![Portfolio Preview](src/assets/images/Display.png)
 
 ## 📂 Project Structure
 ```
