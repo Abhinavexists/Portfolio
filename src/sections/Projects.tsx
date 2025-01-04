@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import NeuNet from "@/assets/images/NeuNet.png";
+import Brieflet from "@/assets/images/Brieflet.png";
+import ArroeDetection from "@/assets/images/ArrowDetection.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import GithubIcon from "@/assets/icons/Github.svg";
@@ -10,43 +10,43 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+    "company": "Python, NumPy, Matplotlib, Plotly",
+    "year": "2024",
+    "title": "Neural Network from Scratch",
+    "results": [
+      { "title": "Implemented a fully connected neural network with backpropagation" },
+      { "title": "Achieved 92% accuracy on synthetic spiral dataset" },
+      { "title": "Introduced dynamic learning rate decay and accuracy evaluation" }
     ],
-    link: "link1",
-    liveLink: "https://live-site-1.com",
-    image: darkSaasLandingPage,
+    "link": { "url": "https://github.com/Abhinavexists/neural-network-from-scratch", "target": "_blank" },
+    "liveLink": "https://github.com/Abhinavexists/neural-network-from-scratch",
+    "image": NeuNet
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+    "company": "Python, Flask, PyTorch, Transformers, scikit-learn, NLTK, PyPDF2",
+    "year": "2025",
+    "title": "Research Paper Summarization and Analysis",
+    "results": [
+      { "title": "Automated domain classification of research papers" },
+      { "title": "Generated concise, informative summaries for research papers" },
+      { "title": "Extracted key sections like abstract, introduction, methodology, results, and conclusion" }
     ],
-    link: "link2",
-    liveLink: "https://live-site-2.com",
-    image: lightSaasLandingPage,
+    "link": { "url": "https://github.com/Abhinavexists/brieflet", "target": "_blank" },
+    "liveLink": "https://github.com/Abhinavexists/brieflet",
+    "image": Brieflet
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+    "company": "Python, OpenCV",
+    "year": "2025",
+    "title": "Arrow Detection with OpenCV",
+    "results": [
+      { "title": "Real-time video processing for arrow shape detection" },
+      { "title": "Implemented adjustable HSV thresholds for fine-tuning detection" },
+      { "title": "Highlighted detected arrows with bounding boxes and contours" }
     ],
-    link: "link3",
-    liveLink: "https://live-site-3.com",
-    image: aiStartupLandingPage,
+    "link": { "url": "https://github.com/Abhinavexists/ArrowDetection", "target": "_blank" },
+    "liveLink": "https://github.com/Abhinavexists/ArrowDetection",
+    "image": ArroeDetection
   },
 ];
 
@@ -89,7 +89,7 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
-                    <a href={project.link} className="inline-block w-full sm:w-auto">
+                    <a href={project.link.url} className="inline-block w-full sm:w-auto">
                       <button className="bg-white text-gray-950 h-12 w-full px-4 sm:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                         <span>Github</span>
                         <GithubIcon className="size-5" />
