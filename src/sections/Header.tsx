@@ -23,11 +23,40 @@ export const Header = () => {
     <header className="fixed top-3 w-full z-10 px-4">
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-between items-center">
-        {/* ... (desktop navigation remains unchanged) ... */}
+        <div className="flex-1"></div>
+        <div className="flex-1 flex justify-center">
+          <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur-xl">
+            <a href="#home" className="nav-item" onClick={handleNavClick}>
+              Home
+            </a>
+            <a href="#projects" className="nav-item" onClick={handleNavClick}>
+              Projects
+            </a>
+            <a href="#about" className="nav-item" onClick={handleNavClick}>
+              About
+            </a>
+            <a href="#contact" className="nav-item" onClick={handleNavClick}>
+              Contact
+            </a>
+          </nav>
+        </div>
+        <div className="flex-1 flex justify-end items-center">
+          <nav className="p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur-xl">
+            <a
+              href="https://drive.google.com/file/d/1wbFORRlB13HJpqUZl0MmhSZ1QtPthSa3/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-item flex items-center"
+            >
+              <span>Resume</span>
+              <DownloadIcon className="size-4 ml-2" />
+            </a>
+          </nav>
+        </div>
       </div>
 
-      {/* Mobile Navigation */}
-      <div className="md:hidden flex justify-between items-center">
+       {/* Mobile Navigation */}
+       <div className="md:hidden flex justify-between items-center">
         <button
           onClick={toggleMenu}
           className="p-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/15 transition-colors duration-300 ease-in-out hover:bg-white/20"
@@ -55,7 +84,6 @@ export const Header = () => {
           ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
         `}
       >
-        {/*Removed Close Button Here*/}
         <nav className={`
           flex flex-col items-center gap-6 pt-20
           transition-all duration-300 ease-in-out
