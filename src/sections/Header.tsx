@@ -25,7 +25,7 @@ export const Header = () => {
       <div className="flex-1 flex justify-end items-center">
         <nav className="p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur-xl">
           <a
-            href="/path/to/resume.pdf" // Ensure this is the correct path to your resume
+            href="https://drive.google.com/file/d/1wbFORRlB13HJpqUZl0MmhSZ1QtPthSa3/view?usp=sharing" // Ensure this is the correct path to your resume
             target="_blank"
             rel="noopener noreferrer"
             className="nav-item flex items-center"
