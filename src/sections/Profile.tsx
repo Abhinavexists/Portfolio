@@ -4,7 +4,7 @@ import GrainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import { Orbit } from "@/components/Orbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
-import YourFaceImage from "@/assets/images/Inspired.jpeg";
+import YourFaceImage from "@/assets/images/profile.png";
 
 export const ProfileSection = () => {
   return (
