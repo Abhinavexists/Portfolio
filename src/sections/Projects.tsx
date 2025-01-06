@@ -1,6 +1,6 @@
 import NeuNet from "@/assets/images/NeuNet.png";
 import Brieflet from "@/assets/images/Brieflet.png";
-import ArroeDetection from "@/assets/images/ArrowDetection.png";
+import ArrowDetection from "@/assets/images/ArrowDetection.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import GithubIcon from "@/assets/icons/Github.svg";
@@ -24,8 +24,8 @@ const portfolioProjects = [
   },
   {
     "company": "Python, Flask, PyTorch, Transformers, scikit-learn, NLTK, PyPDF2",
-    "year": "2025",
-    "title": "Research Paper Summarization and Analysis",
+    "year": "2024",
+    "title": "Brieflet",
     "results": [
       { "title": "Automated domain classification of research papers" },
       { "title": "Generated concise, informative summaries for research papers" },
@@ -37,8 +37,8 @@ const portfolioProjects = [
   },
   {
     "company": "Python, OpenCV",
-    "year": "2025",
-    "title": "Arrow Detection with OpenCV",
+    "year": "2023",
+    "title": "ArrowDetection",
     "results": [
       { "title": "Real-time video processing for arrow shape detection" },
       { "title": "Implemented adjustable HSV thresholds for fine-tuning detection" },
@@ -46,7 +46,7 @@ const portfolioProjects = [
     ],
     "link": { "url": "https://github.com/Abhinavexists/ArrowDetection", "target": "_blank" },
     "liveLink": "https://github.com/Abhinavexists/ArrowDetection",
-    "image": ArroeDetection
+    "image": ArrowDetection
   },
 ];
 
@@ -95,12 +95,12 @@ export const ProjectsSection = () => {
                         <GithubIcon className="size-5" />
                       </button>
                     </a>
-                    <a href={project.liveLink} className="inline-block w-full sm:w-auto">
+                    {/* <a href={project.liveLink} className="inline-block w-full sm:w-auto">
                       <button className="bg-indigo-500 text-white h-12 w-full px-4 sm:px-6 rounded-xl font-medium inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         <span>Website</span>
                         <ArrowUpIcon className="size-5" />
                       </button>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="relative overflow rounded-lg mt-8 lg:mt-0 lg:pl-16">
