@@ -12,7 +12,7 @@ const portfolioProjects = [
   {
     "company": "Python, NumPy, Matplotlib, Plotly",
     "year": "2024",
-    "title": "Neural Network from Scratch",
+    "title": "NeuNet",
     "results": [
       { "title": "Implemented a fully connected neural network with backpropagation" },
       { "title": "Achieved 92% accuracy on synthetic spiral dataset" },

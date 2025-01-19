@@ -16,7 +16,7 @@ export const Achievements = [
     icon: DesignHub,
   },
   {
-    title: "Beta Mearn Student Ambassador",
+    title: "Beta Learn Student Ambassador",
     description: "Became a Beta Member of MLSA(Microsoft Learn Student Ambassador) Program. Organized various events and workshops on AI, ML, and Cloud.",
     year: "2023",
     icon: BetaMLSA,
