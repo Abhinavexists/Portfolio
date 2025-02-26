@@ -43,7 +43,7 @@ export const Header = () => {
         <div className="flex-1 flex justify-end items-center">
           <nav className="p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur-xl">
             <a
-              href="https://drive.google.com/file/d/1d8AbGPnJGpKc--k6FU8gXsOPGwwi5fMj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1P2_SJR922YIMCZdgoYLyuLwCz8zQaFut/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-item flex items-center"
@@ -65,7 +65,7 @@ export const Header = () => {
         </button>
         <nav className="p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur-xl">
           <a
-            href="https://drive.google.com/file/d/1d8AbGPnJGpKc--k6FU8gXsOPGwwi5fMj/view?usp=sharing"
+            href="https://drive.google.com/file/d/1P2_SJR922YIMCZdgoYLyuLwCz8zQaFut/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-item flex items-center"
