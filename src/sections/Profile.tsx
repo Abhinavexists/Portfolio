@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 import GrainImage from "@/assets/images/grain.jpg";
@@ -73,13 +74,26 @@ export const ProfileSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105  focus:outline-none focus:ring-2 focus:ring-offset-2">
+          <button 
+            onClick={() => {
+              const projectsSection = document.getElementById('projects');
+              if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105  focus:outline-none focus:ring-2 focus:ring-offset-2"
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4"/>
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105 ">
-            <span className="font-semibold ">Let's Connect</span>
-          </button>
+          <a 
+            href="https://linktr.ee/abhinavexists" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105"
+          >
+            <span className="font-semibold">Let's Connect</span>
+          </a>
         </div>
       </div>
     </div>

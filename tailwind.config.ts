@@ -34,8 +34,22 @@ const config: Config = {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+        theme: {
+          bg: 'hsl(var(--theme-bg))',
+          fg: 'hsl(var(--theme-fg))',
+          accent: 'hsl(var(--theme-accent))',
+          'accent-light': 'hsl(var(--theme-accent-light))',
+          'accent-dark': 'hsl(var(--theme-accent-dark))',
+          muted: 'hsl(var(--theme-muted))',
+          'muted-fg': 'hsl(var(--theme-muted-fg))',
+          border: 'hsl(var(--theme-border))',
+          card: 'hsl(var(--theme-card))',
+          'card-fg': 'hsl(var(--theme-card-fg))',
+          highlight: 'hsl(var(--theme-highlight))',
+        },
   			card: {
   				DEFAULT: 'hsl(var(--card))',
+  				foreground: 'hsl(var(--card-foreground))'
   			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',

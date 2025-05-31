@@ -114,6 +114,17 @@ export const ProjectsSection = () => {
             </Card>
           ))}
         </div>
+        
+        {/* More Projects Button */}
+        <div className="flex justify-center mt-20">
+          <a 
+            href="/projects" 
+            className="inline-flex items-center gap-2 border border-white/15 px-8 h-14 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            <span className="font-semibold text-lg">More Projects</span>
+            <ArrowUpIcon className="size-5" />
+          </a>
+        </div>
       </div>
     </section>
   );

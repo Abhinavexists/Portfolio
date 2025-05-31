@@ -6,6 +6,7 @@ import { AchivementsSection } from "@/sections/Achivements";
 import { AboutSection } from "@/sections/About";
 import { GameSection } from "@/sections/Game";
 import { Footer } from "@/sections/Footer";
+import CodingChallengesSection from "@/sections/ChallengesSection";
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
       <section id="about">
         <AboutSection />
       </section>
-        <GameSection />
+      <CodingChallengesSection />
+      <GameSection />
       <section id="contact">
         <Footer />
       </section>
