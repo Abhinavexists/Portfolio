@@ -79,7 +79,7 @@ export const GameSection = () => {
                   </div>
                 </div>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:abhinavkumarsingh2023@gmail.com"
                   className="mt-4 inline-flex items-center px-4 py-2 rounded-full bg-white text-gray-900 text-sm font-medium hover:bg-gray-100 transition-colors"
                 >
                   <Mail className="mr-2 h-4 w-4" />
