@@ -1,6 +1,6 @@
 import NeuNet from "@/assets/images/NeuNet.png";
-import Brieflet from "@/assets/images/Brieflet.png";
-import ArrowSense from "@/assets/images/ArrowSense.png";
+import Wasserstoff from "@/assets/images/Wasserstoff.png";
+import FinWell from "@/assets/images/FinWell.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import GithubIcon from "@/assets/icons/Github.svg";
@@ -10,45 +10,48 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    "company": "Python, NumPy, Matplotlib, Plotly",
-    "year": "2024",
-    "title": "NeuNet",
-    "results": [
-      { "title": "Implemented a fully connected neural network with backpropagation" },
-      { "title": "Achieved 92% accuracy on synthetic spiral dataset" },
-      { "title": "Introduced dynamic learning rate decay and accuracy evaluation" }
+    company: "Python, NumPy, Matplotlib, Plotly",
+    year: "2024",
+    title: "NeuNet",
+    results: [
+      { title: "Implemented a fully connected neural network with backpropagation" },
+      { title: "Achieved 92% accuracy on synthetic spiral dataset" },
+      { title: "Introduced dynamic learning rate decay and accuracy evaluation" }
     ],
-    "link": { "url": "https://github.com/Abhinavexists/neural-network-from-scratch", "target": "_blank" },
-    "liveLink": "https://github.com/Abhinavexists/neural-network-from-scratch",
-    "image": NeuNet
+    link: { url: "https://github.com/Abhinavexists/NeuNet", target: "_blank" },
+    liveLink: "https://abhinavexists.github.io/NeuNet/index.html",
+    image: NeuNet,
+    featured: true
   },
   {
-    "company": "Python, Flask, PyTorch, Transformers, scikit-learn, NLTK, PyPDF2",
-    "year": "2024",
-    "title": "Brieflet",
-    "results": [
-      { "title": "Automated domain classification of research papers" },
-      { "title": "Generated concise, informative summaries for research papers" },
-      { "title": "Extracted key sections like abstract, introduction, methodology, results, and conclusion" }
+    company: "React, TypeScript, FastAPI, Python, Langchain, ChromaDB, PostgreSQL",
+    year: "2025",
+    title: "Wasserstoff",
+    results: [
+      { title: "Identify common themes across multiple document sources" },
+      { title: "Provide multi-level citations (document, paragraph, sentence level)" },
+      { title: "Built chatbot-style interface for document research queries" }
     ],
-    "link": { "url": "https://github.com/Abhinavexists/brieflet", "target": "_blank" },
-    "liveLink": "https://github.com/Abhinavexists/brieflet",
-    "image": Brieflet
+    link: { url: "https://github.com/Abhinavexists/wasserstoff", target: "_blank" },
+    liveLink: "https://wasserstofftask-production.up.railway.app/",
+    image: Wasserstoff,
+    featured: true
   },
   {
-    "company": "Python, OpenCV",
-    "year": "2023",
-    "title": "ArrowSense",
-    "results": [
-      { "title": "Real-time video processing for arrow shape detection" },
-      { "title": "Implemented adjustable HSV thresholds for fine-tuning detection" },
-      { "title": "Highlighted detected arrows with bounding boxes and contours" }
+    company: "Python, Gemini AI, CrewAI, Multi-agent Systems, Financial APIs",
+    year: "2025",
+    title: "FinWell",
+    results: [
+      { title: "Multi-agent financial analysis with collaborative AI agents" },
+      { title: "Comprehensive stock market analysis and risk assessment" },
+      { title: "Technical and fundamental analysis with automated reporting" }
     ],
-    "link": { "url": "https://github.com/Abhinavexists/ArrowDetection", "target": "_blank" },
-    "liveLink": "https://arrowdetection.onrender.com/",
-    "image": ArrowSense
+    link: { url: "https://github.com/Abhinavexists/FinWell", target: "_blank" },
+    liveLink: "https://github.com/Abhinavexists/FinWell",
+    image: FinWell,
+    featured: true
   },
-];
+]
 
 export const ProjectsSection = () => {
   return (

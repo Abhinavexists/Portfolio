@@ -14,6 +14,11 @@ import { ArrowLeft } from 'lucide-react';
 import NeuNet from '@/assets/images/NeuNet.png';
 import Brieflet from '@/assets/images/Brieflet.png';
 import ArrowSense from '@/assets/images/ArrowSense.png';
+import Wasserstoff from '@/assets/images/Wasserstoff.png';
+import FinWell from '@/assets/images/FinWell.png';
+import StockBoard from '@/assets/images/StockBoard.png';
+import WaveletTransforms from '@/assets/images/Wavelet.png';
+import Koala from '@/assets/images/Koala.png';
 
 const allProjects = [
   {
@@ -25,10 +30,99 @@ const allProjects = [
       { title: "Achieved 92% accuracy on synthetic spiral dataset" },
       { title: "Introduced dynamic learning rate decay and accuracy evaluation" }
     ],
-    link: { url: "https://github.com/Abhinavexists/neural-network-from-scratch", target: "_blank" },
-    liveLink: "https://github.com/Abhinavexists/neural-network-from-scratch",
+    link: { url: "https://github.com/Abhinavexists/NeuNet", target: "_blank" },
+    liveLink: "https://abhinavexists.github.io/NeuNet/index.html",
     image: NeuNet,
     featured: true
+  },
+  {
+    company: "React, TypeScript, FastAPI, Python, Langchain, ChromaDB, PostgreSQL",
+    year: "2025",
+    title: "Wasserstoff",
+    results: [
+      { title: "Identify common themes across multiple document sources" },
+      { title: "Provide multi-level citations (document, paragraph, sentence level)" },
+      { title: "Built chatbot-style interface for document research queries" }
+    ],
+    link: { url: "https://github.com/Abhinavexists/wasserstoff", target: "_blank" },
+    liveLink: "https://wasserstofftask-production.up.railway.app/",
+    image: Wasserstoff,
+    featured: true
+  },
+  {
+    company: "Python, Gemini AI, CrewAI, Multi-agent Systems, Financial APIs",
+    year: "2025",
+    title: "FinWell",
+    results: [
+      { title: "Multi-agent financial analysis with collaborative AI agents" },
+      { title: "Comprehensive stock market analysis and risk assessment" },
+      { title: "Technical and fundamental analysis with automated reporting" }
+    ],
+    link: { url: "https://github.com/Abhinavexists/FinWell", target: "_blank" },
+    liveLink: "https://github.com/Abhinavexists/FinWell",
+    image: FinWell,
+    featured: true
+  },
+  
+  // Additional Projects
+  {
+    company: "Python, OpenCV",
+    year: "2023",
+    title: "ArrowSense",
+    results: [
+      { title: "Real-time video processing for arrow shape detection" },
+      { title: "Implemented adjustable HSV thresholds for fine-tuning detection" },
+      { title: "Highlighted detected arrows with bounding boxes and contours" }
+    ],
+    link: { url: "https://github.com/Abhinavexists/ArrowDetection", target: "_blank" },
+    liveLink: "https://arrowdetection.onrender.com/",
+    image: ArrowSense,
+    featured: false
+  },
+  {
+    company: "Web Development, Financial Data, Real-time Analytics",
+    year: "2024",
+    title: "StockBoard",
+    results: [
+      { title: "Real-time stock market data visualization dashboard" },
+      { title: "Interactive charts and financial analytics" },
+      { title: "Portfolio tracking and performance metrics" },
+      { title: "Responsive design with modern UI/UX" }
+    ],
+    link: { url: "https://github.com/Abhinavexists/StockBoard", target: "_blank" },
+    liveLink: "https://stock-board-jet.vercel.app/",
+    image: StockBoard,
+    featured: false
+  },
+  {
+    company: "Python, Machine Learning, Data Science",
+    year: "2024",
+    title: "Koala",
+    results: [
+      { title: "Advanced machine learning framework and utilities" },
+      { title: "Streamlined data processing and model training pipeline" },
+      { title: "Comprehensive evaluation and visualization tools" },
+      { title: "Modular design for extensible ML workflows" }
+    ],
+    link: { url: "https://github.com/Abhinavexists/Koala", target: "_blank" },
+    liveLink: "https://github.com/Abhinavexists/Koala",
+    image: Koala,
+    featured: false
+  },
+  {
+    company: "Python, Flask, PyWavelets, OpenCV, NumPy",
+    year: "2024",
+    title: "Wavelet Transforms",
+    results: [
+      { title: "Advanced image denoising using multiple wavelet transform methods" },
+      { title: "Implemented VisuShrink, BayesShrink, and SureShrink algorithms" },
+      { title: "Web interface with drag-and-drop functionality" },
+      { title: "Color space processing in RGB and YCbCr formats" }
+    ],
+    link: { url: "https://github.com/Abhinavexists/Wavelet-Transforms", target: "_blank" },
+    liveLink: "https://github.com/Abhinavexists/Wavelet-Transforms",
+    image: WaveletTransforms,
+    featured: false
   },
   {
     company: "Python, Flask, PyTorch, Transformers, scikit-learn, NLTK, PyPDF2",
@@ -42,106 +136,21 @@ const allProjects = [
     link: { url: "https://github.com/Abhinavexists/brieflet", target: "_blank" },
     liveLink: "https://github.com/Abhinavexists/brieflet",
     image: Brieflet,
-    featured: true
+    featured: false
   },
   {
-    company: "Python, OpenCV",
-    year: "2023",
-    title: "ArrowSense",
-    results: [
-      { title: "Real-time video processing for arrow shape detection" },
-      { title: "Implemented adjustable HSV thresholds for fine-tuning detection" },
-      { title: "Highlighted detected arrows with bounding boxes and contours" }
-    ],
-    link: { url: "https://github.com/Abhinavexists/ArrowDetection", target: "_blank" },
-    liveLink: "https://arrowdetection.onrender.com/",
-    image: ArrowSense,
-    featured: true
-  },
-  
-  // Additional Projects
-  {
-    company: "React, Next.js, TypeScript, Framer Motion",
+    company: "Python, MCP, Gemini AI, Weather APIs",
     year: "2024",
-    title: "Portfolio Website",
+    title: "MCP Server",
     results: [
-      { title: "Built responsive portfolio with modern design" },
-      { title: "Implemented interactive animations and smooth scrolling" },
-      { title: "Optimized performance with lazy loading and code splitting" }
+      { title: "Implemented Model Context Protocol server-client architecture" },
+      { title: "Integrated with National Weather Service API for real-time data" },
+      { title: "Natural language interface powered by Google's Gemini AI" },
+      { title: "Command-line tool for US weather data access" }
     ],
-    link: { url: "https://github.com/Abhinavexists/Portfolio", target: "_blank" },
-    liveLink: "https://abhinavexists.vercel.app/",
-    image: NeuNet, 
-    featured: false
-  },
-  {
-    company: "Python, Pandas, Matplotlib, Seaborn",
-    year: "2024",
-    title: "Data Analysis Toolkit",
-    results: [
-      { title: "Created comprehensive data visualization library" },
-      { title: "Automated statistical analysis and reporting" },
-      { title: "Generated interactive charts and dashboards" }
-    ],
-    link: { url: "https://github.com/Abhinavexists/data-analysis-toolkit", target: "_blank" },
-    liveLink: "https://github.com/Abhinavexists/data-analysis-toolkit",
-    image: Brieflet, 
-    featured: false
-  },
-  {
-    company: "Python, TensorFlow, Keras, Computer Vision",
-    year: "2023",
-    title: "Image Classification Model",
-    results: [
-      { title: "Developed CNN model for multi-class image classification" },
-      { title: "Achieved 95% accuracy on test dataset" },
-      { title: "Implemented data augmentation and transfer learning" }
-    ],
-    link: { url: "https://github.com/Abhinavexists/image-classifier", target: "_blank" },
-    liveLink: "https://github.com/Abhinavexists/image-classifier",
-    image: ArrowSense, 
-    featured: false
-  },
-  {
-    company: "Python, FastAPI, SQLAlchemy, PostgreSQL",
-    year: "2024",
-    title: "RESTful API Service",
-    results: [
-      { title: "Built scalable API with authentication and authorization" },
-      { title: "Implemented CRUD operations with database optimization" },
-      { title: "Added comprehensive API documentation with Swagger" }
-    ],
-    link: { url: "https://github.com/Abhinavexists/api-service", target: "_blank" },
-    liveLink: "https://github.com/Abhinavexists/api-service",
-    image: NeuNet, 
-    featured: false
-  },
-  {
-    company: "JavaScript, Node.js, Express, MongoDB",
-    year: "2023",
-    title: "Task Management App",
-    results: [
-      { title: "Created full-stack web application for task tracking" },
-      { title: "Implemented real-time updates with WebSocket" },
-      { title: "Added user authentication and role-based access" }
-    ],
-    link: { url: "https://github.com/Abhinavexists/task-manager", target: "_blank" },
-    liveLink: "https://github.com/Abhinavexists/task-manager",
-    image: Brieflet, 
-    featured: false
-  },
-  {
-    company: "Python, scikit-learn, Streamlit, Plotly",
-    year: "2023",
-    title: "ML Model Playground",
-    results: [
-      { title: "Interactive web app for testing ML algorithms" },
-      { title: "Visualized model performance with interactive plots" },
-      { title: "Supported multiple datasets and preprocessing options" }
-    ],
-    link: { url: "https://github.com/Abhinavexists/ml-playground", target: "_blank" },
-    liveLink: "https://ml-playground-abhinav.streamlit.app/",
-    image: ArrowSense, 
+    link: { url: "https://github.com/Abhinavexists/MCP_Server", target: "_blank" },
+    liveLink: "https://github.com/Abhinavexists/MCP_Server",
+    image: NeuNet,
     featured: false
   }
 ];
