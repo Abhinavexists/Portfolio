@@ -1,20 +1,23 @@
 import React from 'react';
 
 export function smoothScroll(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>): string {
-  e.preventDefault();
-  const href = e.currentTarget.href;
-  const targetId = href.replace(/.*\#/, "");
+  const linkElement = e.currentTarget as HTMLAnchorElement;
+  const url = new URL(linkElement.href, window.location.href);
+  const targetId = url.hash.replace('#', '');
   const elem = document.getElementById(targetId);
+  const isSamePath = url.pathname === window.location.pathname;
   const header = document.querySelector('header');
   const headerOffset = header ? header.offsetHeight : 0;
-  
-  if (elem) {
+
+  // Only intercept default navigation when the target element exists on the same page
+  if (isSamePath && elem) {
+    e.preventDefault();
     const elementPosition = elem.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset - headerOffset - 20;
 
     window.scrollTo({
       top: offsetPosition,
-      behavior: "smooth"
+      behavior: 'smooth',
     });
 
     // Delay updating the active section to allow for smooth scrolling

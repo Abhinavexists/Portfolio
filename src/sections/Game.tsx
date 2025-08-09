@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, lazy, Suspense } from 'react';
+import React, { useRef, lazy, Suspense, useEffect } from 'react';
 import BentoCard from '@/components/BentoCard';
 import { motion, useInView } from 'framer-motion';
 import { ExternalLink, Mail, Code, BookText, Clock, ListPlus } from 'lucide-react';
@@ -18,9 +18,19 @@ export const GameSection = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, {
     once: true,
-    margin: "-50px", 
-    amount: 0.1 
+    margin: "200px 0px", // start loading a bit before it enters the viewport
+    amount: 0.05,
   });
+
+  // Warm up lazy-loaded chunks on idle so they are ready by the time user scrolls here
+  useEffect(() => {
+    const id = setTimeout(() => {
+      import('@/components/MemoryGame');
+      import('@/components/GithubContributions');
+      import('@/components/ContactForm');
+    }, 0);
+    return () => clearTimeout(id);
+  }, []);
 
   return (
     <div className="py-20 lg:py-28" ref={sectionRef}>
@@ -35,7 +45,7 @@ export const GameSection = () => {
         </div>
 
         {isInView && (
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-minmax(250px, auto)">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[minmax(250px,_auto)]">
             <BentoCard colSpan={2} rowSpan={2} delay={0}>
               <Suspense fallback={<LoadingCard>Loading Memory Game...</LoadingCard>}>
                 <MemoryGame />
@@ -91,7 +101,7 @@ export const GameSection = () => {
         )}
         
         {!isInView && (
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-minmax(250px, auto)">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[minmax(250px,_auto)]">
             {[...Array(5)].map((_, index) => (
               <div
                 key={index}

@@ -38,16 +38,16 @@ export const Header = () => {
           <div className="flex-1"></div>
           <div className="flex-1 flex justify-center">
             <nav className={`flex gap-1 p-0.5 border border-white/15 rounded-full ${isScrolled ? 'bg-white/20' : 'bg-white/10'} backdrop-blur-xl transition-all duration-300`}>
-              <a href="#home" className="nav-item" onClick={handleNavClick}>
+              <a href="/#home" className="nav-item" onClick={handleNavClick}>
                 Home
               </a>
-              <a href="#projects" className="nav-item" onClick={handleNavClick}>
+              <a href="/#projects" className="nav-item" onClick={handleNavClick}>
                 Projects
               </a>
-              <a href="#about" className="nav-item" onClick={handleNavClick}>
+              <a href="/#about" className="nav-item" onClick={handleNavClick}>
                 About
               </a>
-              <a href="#contact" className="nav-item" onClick={handleNavClick}>
+              <a href="/#contact" className="nav-item" onClick={handleNavClick}>
                 Contact
               </a>
             </nav>
@@ -55,7 +55,7 @@ export const Header = () => {
           <div className="flex-1 flex justify-end items-center">
             <nav className={`p-0.5 border border-white/15 rounded-full ${isScrolled ? 'bg-white/20' : 'bg-white/10'} backdrop-blur-xl transition-all duration-300`}>
               <a
-                href="https://drive.google.com/file/d/1P2_SJR922YIMCZdgoYLyuLwCz8zQaFut/view?usp=sharing"
+                href="https://drive.google.com/file/d/1DBPFJ3dlAFnt57-yfVOx2IlHaDhWs_4M/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-item flex items-center"
@@ -104,7 +104,7 @@ export const Header = () => {
             {['Home', 'Projects', 'About', 'Contact'].map((item) => (
               <a 
                 key={item}
-                href={`#${item.toLowerCase()}`} 
+                href={`/#${item.toLowerCase()}`} 
                 className={`
                   text-l font-semibold w-64 text-center py-3 px-6
                   rounded-lg bg-white/10 backdrop-blur-md
