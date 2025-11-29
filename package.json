@@ -18,7 +18,7 @@
     "@types/react-leaflet": "^2.8.3",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
-    "glob": "^11.0.0",
+    "glob": "^11.1.0",
     "leaflet": "^1.9.4",
     "lodash": "^4.17.21",
     "lucide-react": "^0.461.0",
@@ -38,7 +38,7 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "16.0.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
