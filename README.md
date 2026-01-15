@@ -2,6 +2,10 @@
 
 A responsive and interactive portfolio website built with TypeScript and React.
 
+>
+> The Project is no longer maintained -> if any issue arises feel free to fix it yourself
+>
+
 ![Portfolio Preview](src/assets/images/Display.png)
 
 ## 📂 Project Structure
