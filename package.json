@@ -20,7 +20,7 @@
     "framer-motion": "^11.3.21",
     "glob": "^11.1.0",
     "leaflet": "^1.9.4",
-    "lodash": "^4.17.21",
+    "lodash": "^4.18.1",
     "lucide-react": "^0.461.0",
     "mapbox-gl": "^3.8.0",
     "next": "^15.5.18",
